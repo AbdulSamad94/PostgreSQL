@@ -21,3 +21,9 @@ VALUES (
 
 
 SELECT * from Employees;
+
+UPDATE Employees
+    SET fname = 'Abdul Samad', lname = 'Siddiqui', email = 'abdulsamadwork109@gmail.com', dept = 'IT', salary = 100000000
+    WHERE emp_id = 1;
+
+SELECT * from Employees;

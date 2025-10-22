@@ -4,11 +4,19 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "tsx watch src/main.ts"
+    "dev": "tsx watch src/main.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:push": "drizzle-kit push"
   },
   "devDependencies": {
     "@types/node": "^20.11.24",
+    "drizzle-kit": "^0.31.5",
     "tsx": "^4.7.1",
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "drizzle-orm": "^0.44.6",
+    "postgres": "^3.4.7"
   }
 }
